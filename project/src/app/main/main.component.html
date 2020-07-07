@@ -1,1 +1,176 @@
-<p>main works!</p>
+<div class="background">
+    <div>
+        <mat-toolbar>
+            <mat-toolbar-row>
+                <span style="margin-left:15px;">
+                    <button mat-button (click)="home()"><img src="/assets/image/logo.png" alt="image" /></button>
+                </span>
+                <span class="space"></span>
+                <span class="title" style="margin-right: 10px;">011-430-99750</span>
+                <span><button mat-button>
+                        <mat-icon>help</mat-icon>
+                        <span class="title">Support</span>
+                    </button></span>
+
+
+                <span>
+                    <button mat-button>
+                        <mat-icon>apps</mat-icon><span class="title">Demo Society</span>
+                    </button></span>
+
+                <span>
+                    <button mat-button style="border-right:1px solid lightgray; border-left:1px solid lightgray;">
+                        <mat-icon>notifications</mat-icon>
+                    </button>
+                    <button mat-button style="border-right:1px solid lightgray;">
+                        <mat-icon>loop</mat-icon>
+                    </button></span>
+                <span>
+                    <button mat-button>
+                        <mat-icon>person</mat-icon><span class="title">Profile</span>
+                    </button>
+                </span>
+
+            </mat-toolbar-row>
+        </mat-toolbar>
+    </div>
+    <div class="tab">
+        <mat-tab-group mat-align-tabs="center" color="accent" [(selectedIndex)]="tab">
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon class="icon">apps</mat-icon>
+                    More
+                </ng-template>More
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon class="icon">home</mat-icon>
+                    Dashboard
+                </ng-template>
+                <app-dashboard></app-dashboard>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon class="icon">receipt</mat-icon>
+                    Bill
+                    <button mat-icon-button [matMenuTriggerFor]="menu">
+                        <mat-icon class="icon">expand_more</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <span>sub-menu1</span>
+                        </button>
+                        <button mat-menu-item disabled>
+                            <span>sub-menu2</span>
+                        </button>
+                        <button mat-menu-item>
+                            <span>sub-menu3</span>
+                        </button>
+                    </mat-menu>
+                </ng-template>Bill
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <img src="/assets/image/rupee.png" class="icon" alt="rupee" style="width:18px; height
+                    :18px;" />
+                    Payment
+                    <button mat-icon-button [matMenuTriggerFor]=" menu">
+                        <mat-icon class="icon">expand_more</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <span>sub-menu1</span>
+                        </button>
+                        <button mat-menu-item disabled>
+                            <span>sub-menu2</span>
+                        </button>
+                        <button mat-menu-item>
+                            <span>sub-menu3</span>
+                        </button>
+                    </mat-menu>
+                </ng-template>
+                Payment
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon class="icon">account_balance_wallet</mat-icon>
+                    Accounting
+                    <button mat-icon-button [matMenuTriggerFor]="menu">
+                        <mat-icon class="icon">expand_more</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <span>sub-menu1</span>
+                        </button>
+                        <button mat-menu-item disabled>
+                            <span>sub-menu2</span>
+                        </button>
+                        <button mat-menu-item>
+                            <span>sub-menu3</span>
+                        </button>
+                    </mat-menu>
+                </ng-template>
+                Accounting
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <img src="/assets/image/rupee.png" class="icon" alt="rupee" style="width:18px; height:18px;" />
+                    Meter
+                    <button mat-icon-button [matMenuTriggerFor]="menu">
+                        <mat-icon class="icon">expand_more</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <span>sub-menu1</span>
+                        </button>
+                        <button mat-menu-item disabled>
+                            <span>sub-menu2</span>
+                        </button>
+                        <button mat-menu-item>
+                            <span>sub-menu3</span>
+                        </button>
+                    </mat-menu>
+                </ng-template>Meter
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon class="icon">flash_on</mat-icon>
+                    Complaint
+                    <button mat-icon-button [matMenuTriggerFor]="menu">
+                        <mat-icon class="icon">expand_more</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <span>sub-menu1</span>
+                        </button>
+                        <button mat-menu-item disabled>
+                            <span>sub-menu2</span>
+                        </button>
+                        <button mat-menu-item>
+                            <span>sub-menu3</span>
+                        </button>
+                    </mat-menu>
+                </ng-template>Complaint
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon class="icon">person</mat-icon>
+                    User
+                    <button mat-icon-button [matMenuTriggerFor]="menu">
+                        <mat-icon class="icon">expand_more</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <span>sub-menu1</span>
+                        </button>
+                        <button mat-menu-item disabled>
+                            <span>sub-menu2</span>
+                        </button>
+                        <button mat-menu-item>
+                            <span>sub-menu3</span>
+                        </button>
+                    </mat-menu>
+                </ng-template>User
+            </mat-tab>
+        </mat-tab-group>
+    </div>

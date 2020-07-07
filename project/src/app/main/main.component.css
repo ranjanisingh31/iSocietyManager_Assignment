@@ -1,0 +1,44 @@
+mat-toolbar{
+    background-color: white;
+}
+button{
+    background-color: transparent;
+    border: none;
+    padding:0px 10px;
+    border-radius: 0px;
+}
+.background{
+    background-color:white;
+}
+.space{
+    flex:1 1 auto;
+}
+img{
+    width:50px;
+}
+
+mat-toolbar-row>span{
+    font-size: 14px;
+}
+.title{
+    color:black; 
+    margin: 2px;
+    
+}
+mat-icon{
+    color:black;
+}
+::ng-deep .mat-tab-header{
+    background-color: black;
+    color:white;
+}
+::ng-deep.mat-tab-label{
+    font-size: 11px;
+}
+.icon{
+    color:white;
+    margin-right: 5px;
+}
+mat-tab-group{
+    background:whitesmoke;
+}

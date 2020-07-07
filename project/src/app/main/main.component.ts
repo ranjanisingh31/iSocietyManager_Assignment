@@ -8,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
 
   constructor() { }
-
+  public tab = 1;
+  home() {
+    // this.router.navigate(['']);
+  }
   ngOnInit(): void {
   }
 
