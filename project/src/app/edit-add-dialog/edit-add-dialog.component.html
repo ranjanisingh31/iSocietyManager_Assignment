@@ -1,0 +1,11 @@
+<div class="wrapper">
+    <mat-dialog-content>
+        <mat-icon class="close" (click)="closeDialog()">close</mat-icon>
+        <mat-checkbox #cluster [checked]="!data['cluster']">Cluster</mat-checkbox>&nbsp;&nbsp;
+        <mat-checkbox #tower [checked]="!data['tower']">Tower</mat-checkbox>&nbsp;&nbsp;
+        <mat-checkbox #unit [checked]="!data['unit']">Unit</mat-checkbox>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button mat-raised-button [mat-dialog-close]="result" (click)="edit(cluster, tower, unit)">Edit</button>
+    </mat-dialog-actions>
+</div>

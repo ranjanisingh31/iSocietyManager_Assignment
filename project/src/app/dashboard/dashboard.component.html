@@ -64,8 +64,9 @@
                                         <ul type="none" class="list3">
                                             <li>
                                                 <span>Billing Cycle</span><span>
-                                                    <mat-icon class="icon1" style="margin-left:232px;">edit</mat-icon>
-                                                    <mat-icon class="icon1">control_point</mat-icon>
+                                                    <mat-icon class="icon1" style="margin-left:232px;" (click)="edit()">
+                                                        edit</mat-icon>
+                                                    <mat-icon class="icon1" (click)="add()">control_point</mat-icon>
                                                 </span></li>
                                             <li>
                                                 <mat-form-field style="color: black;" appearance="outline">
@@ -82,13 +83,14 @@
                                             </li>
                                             <li><span style="color:gray;font-weight: 300;">Billing cycle is not
                                                     active</span>
-                                                <mat-checkbox color="accent"></mat-checkbox>
+                                                <mat-checkbox color="accent" [checked]="checkBill" (change)="bill()">
+                                                </mat-checkbox>
                                             </li>
                                         </ul>
                                     </td>
                                     <td>
                                         <ul type="none" class="list3" style="padding-bottom: 10px;"
-                                            [(ngModel)]="removeCluster" *ngIf="!removeCluster">
+                                            *ngIf="!removeCluster">
                                             <li><span>Cluster</span></li>
                                             <li>
                                                 <mat-form-field style="color: black;" appearance="outline">
@@ -110,7 +112,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <ul type="none" class="list3" [(ngModel)]="removeTower" *ngIf="!removeTower">
+                                        <ul type="none" class="list3" *ngIf="!removeTower">
                                             <li><span>Tower</span></li>
                                             <li>
                                                 <mat-form-field appearance="outline">
@@ -128,7 +130,7 @@
                                         </ul>
                                     </td>
                                     <td>
-                                        <ul type="none" class="list3" [(ngModel)]="removeUnit" *ngIf="!removeUnit">
+                                        <ul type="none" class="list3" *ngIf="!removeUnit">
                                             <li><span>Unit</span></li>
                                             <li>
                                                 <mat-form-field appearance="outline">
@@ -185,10 +187,10 @@
                                 <td><span class="box">
                                         <ul type="none">
                                             <li class="list1">FROM</li>
-                                            <li>27 April 2019</li>
+                                            <li>{{currentDate|date:'longDate'}}</li>
                                             <mat-divider></mat-divider>
                                             <li class="list2">TO</li>
-                                            <li>21 May 2019</li>
+                                            <li>{{dueDate|date:'longDate'}}</li>
                                         </ul>
                                     </span>
 
@@ -196,10 +198,10 @@
                                 <td><span class="box">
                                         <ul type="none">
                                             <li class="list1">FROM</li>
-                                            <li>27 April 2019</li>
+                                            <li>{{currentDate|date:'longDate'}}</li>
                                             <mat-divider></mat-divider>
                                             <li class="list2">TO</li>
-                                            <li>21 May 2019</li>
+                                            <li>{{dueDate|date:'longDate'}}</li>
                                         </ul>
                                     </span>
 

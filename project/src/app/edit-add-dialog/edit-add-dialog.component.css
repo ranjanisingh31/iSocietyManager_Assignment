@@ -1,0 +1,14 @@
+mat-checkbox{
+    margin-right: 10px;
+    
+}
+mat-dialog-content{
+    height: 50px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+.close{
+    cursor: pointer;
+    position: absolute;
+    margin: -30px 0px 0px 235px;
+}

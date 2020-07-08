@@ -12,8 +12,9 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatInputModule } from "@angular/material/input";
 import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatDialogModule } from "@angular/material/dialog";
 
-const material = [MatToolbarModule, MatIconModule, MatTabsModule, MatButtonModule, MatMenuModule, MatGridListModule, MatDividerModule, MatProgressBarModule, MatSelectModule, MatCheckboxModule, MatInputModule, MatFormFieldModule];
+const material = [MatToolbarModule, MatIconModule, MatTabsModule, MatButtonModule, MatMenuModule, MatGridListModule, MatDividerModule, MatProgressBarModule, MatSelectModule, MatCheckboxModule, MatInputModule, MatFormFieldModule, MatDialogModule];
 
 
 @NgModule({
