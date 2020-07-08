@@ -7,6 +7,14 @@ button{
     padding:0px 10px;
     border-radius: 0px;
 }
+.nav{
+    background-color: transparent;
+    border: none;
+    padding:0px 10px;
+    border-radius: 0px;
+    height: 55px;
+    padding-top:10px;
+}
 .background{
     background-color:white;
 }
@@ -16,9 +24,12 @@ button{
 img{
     width:50px;
 }
+mat-toolbar-row{
+    height: 36px;
+}
 
 mat-toolbar-row>span{
-    font-size: 14px;
+    font-size: 13px;
 }
 .title{
     color:black; 
@@ -30,15 +41,22 @@ mat-icon{
 }
 ::ng-deep .mat-tab-header{
     background-color: black;
-    color:white;
 }
 ::ng-deep.mat-tab-label{
     font-size: 11px;
+    color:white;
 }
 .icon{
     color:white;
     margin-right: 5px;
+    font-size: 20px;
 }
 mat-tab-group{
     background:whitesmoke;
+}
+::ng-deep.mat-ink-bar{
+    background-color: white !important;
+}
+.mat-toolbar-multiple-rows {
+    min-height: 46px;
 }

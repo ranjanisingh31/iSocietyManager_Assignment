@@ -3,30 +3,32 @@
         <mat-toolbar>
             <mat-toolbar-row>
                 <span style="margin-left:15px;">
-                    <button mat-button (click)="home()"><img src="/assets/image/logo.png" alt="image" /></button>
+                    <button mat-button (click)="home()"><img src="/assets/image/logo.png" alt="image"
+                            style="width: 40px;margin-top: 10px;" /></button>
                 </span>
                 <span class="space"></span>
-                <span class="title" style="margin-right: 10px;">011-430-99750</span>
-                <span><button mat-button>
+                <span class="title" style="margin-right: 10px; margin-top:10px;">011-430-99750</span>
+                <span><button mat-button class="nav">
                         <mat-icon>help</mat-icon>
                         <span class="title">Support</span>
                     </button></span>
 
 
                 <span>
-                    <button mat-button>
+                    <button mat-button class="nav">
                         <mat-icon>apps</mat-icon><span class="title">Demo Society</span>
                     </button></span>
 
                 <span>
-                    <button mat-button style="border-right:1px solid lightgray; border-left:1px solid lightgray;">
+                    <button mat-button style="border-right:1px solid lightgray; border-left:1px solid lightgray;"
+                        class="nav">
                         <mat-icon>notifications</mat-icon>
                     </button>
-                    <button mat-button style="border-right:1px solid lightgray;">
+                    <button mat-button style="border-right:1px solid lightgray;" class="nav">
                         <mat-icon>loop</mat-icon>
                     </button></span>
                 <span>
-                    <button mat-button>
+                    <button mat-button class="nav">
                         <mat-icon>person</mat-icon><span class="title">Profile</span>
                     </button>
                 </span>
@@ -35,7 +37,7 @@
         </mat-toolbar>
     </div>
     <div class="tab">
-        <mat-tab-group mat-align-tabs="center" color="accent" [(selectedIndex)]="tab">
+        <mat-tab-group mat-align-tabs="center" [(selectedIndex)]="tab">
             <mat-tab>
                 <ng-template mat-tab-label>
                     <mat-icon class="icon">apps</mat-icon>
@@ -71,8 +73,8 @@
             </mat-tab>
             <mat-tab>
                 <ng-template mat-tab-label>
-                    <img src="/assets/image/rupee.png" class="icon" alt="rupee" style="width:18px; height
-                    :18px;" />
+                    <img src="/assets/image/rupee.png" class="icon" alt="rupee" style="width:14px; height
+                    :14px;" />
                     Payment
                     <button mat-icon-button [matMenuTriggerFor]=" menu">
                         <mat-icon class="icon">expand_more</mat-icon>
@@ -114,7 +116,7 @@
             </mat-tab>
             <mat-tab>
                 <ng-template mat-tab-label>
-                    <img src="/assets/image/rupee.png" class="icon" alt="rupee" style="width:18px; height:18px;" />
+                    <img src="/assets/image/rupee.png" class="icon" alt="rupee" style="width:14px; height:14px;" />
                     Meter
                     <button mat-icon-button [matMenuTriggerFor]="menu">
                         <mat-icon class="icon">expand_more</mat-icon>

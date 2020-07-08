@@ -11,8 +11,9 @@ import { MatProgressBarModule } from "@angular/material/progress-bar";
 import { MatSelectModule } from "@angular/material/select";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatInputModule } from "@angular/material/input";
+import { MatFormFieldModule } from "@angular/material/form-field";
 
-const material = [MatToolbarModule, MatIconModule, MatTabsModule, MatButtonModule, MatMenuModule, MatGridListModule, MatDividerModule, MatProgressBarModule, MatSelectModule, MatCheckboxModule, MatInputModule];
+const material = [MatToolbarModule, MatIconModule, MatTabsModule, MatButtonModule, MatMenuModule, MatGridListModule, MatDividerModule, MatProgressBarModule, MatSelectModule, MatCheckboxModule, MatInputModule, MatFormFieldModule];
 
 
 @NgModule({

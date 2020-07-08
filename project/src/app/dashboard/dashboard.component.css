@@ -1,0 +1,129 @@
+.icon,.icon1{
+    color:steelblue;
+    margin-right: 10px;
+}
+.icon1{
+    border:1px solid lightgray;
+    margin-right: 2px;
+    font-size: 21px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button{
+    background-color: white;
+    color: black;
+    width:187.5px;
+    margin:20px 2px;
+    border-radius: 0px;
+    font-weight: 500;
+    height: 33px;
+    font-size: 13px;
+}
+.moreBtn,.moreBtn3{
+    width:25px;
+    
+}
+.moreBtn3{
+    padding:0px;
+    border: none;
+    margin-left: 60px;
+}
+.moreBtn1{
+    width:25px;
+    padding:0px;
+    margin-left:5px;
+    height:120px;
+}
+.table{
+    margin:20px 50px 10px 50px;
+}
+mat-grid-list{
+    margin:0px 55px 0px 55px;
+}
+mat-grid-tile{
+    width:200px;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+.second > table,.first>table{
+    background-color: white;
+    padding: 10px;
+    font-size:13px;
+}
+.first>table{
+margin:30px 10px 10px 55px;
+width:366px;
+height:388px;
+}
+.second>table{
+margin:30px 54px 10px 10px;
+text-align: center;
+height: 388px;
+width: 440px;
+}
+.box>ul{
+    padding: 0px;
+    margin:17px 6px;
+    border: 1px outset lightgray;
+    box-shadow: 2px 3px lightgray;
+    width: 120px;
+    height:120px;
+    font-size:13px;
+    font-weight: 500;
+}
+mat-divider{
+    background-color: lightgray;
+}
+.list1,.list2{
+    color:gray;
+}
+.list1{
+    padding-top:20px;
+}
+.list3{
+    padding:0px 10px;
+    margin-top:0px;
+}
+::ng-deep.mat-select-arrow{
+    color:steelblue;
+}
+::ng-deep.mat-form-field-wrapper{
+    padding-bottom: 0px;
+}
+
+::ng-deep.mat-form-field-appearance-outline .mat-form-field-outline {
+  color: lightgray !important;
+ }
+mat-form-field{
+    width:350px;
+}
+.last{
+    text-align: center;
+}
+.last>button{
+    width:120px;
+    font-size: 13px;
+    margin-right: 10px;
+    height: 32px;
+    font-weight: 500;
+}
+mat-checkbox{
+    margin-left:193px;
+}
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    background-color:steelblue;
+  }
+.close{
+    font-size: 15px;
+    background: gray;
+    color: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 15px;
+    position: absolute;
+    margin-left: -12px;
+    padding-left: 1px;
+    cursor: pointer;
+}
